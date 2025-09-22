@@ -36,9 +36,7 @@ public class Sieve
             {
                 System.out.println(a + " ");
             }
-            System.out.println(" is prime.");
         }
+        System.out.print(" is prime");
     }
-
-    
 }
