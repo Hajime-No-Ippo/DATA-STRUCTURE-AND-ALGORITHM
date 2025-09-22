@@ -1,4 +1,4 @@
-# myFirstProgram
+# DATA STRUCTURE AND ALGORITHM
 
 A simple Java implementation of the **Linear Search** algorithm.
 
