@@ -30,11 +30,11 @@ public class Sieve
             }
         }
 
-        for(int a = 0; a < isPrime.length; a++)
+        for(int a = 2; a < n; a++)
         {
             if(isPrime[a])
             {
-                System.out.println(a + " ");
+                System.out.print(a + " ");
             }
         }
         System.out.print(" is prime");
