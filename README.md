@@ -14,6 +14,10 @@ Linear search is a basic algorithm that checks each element of an array one by o
 
 ## 📁 Project Structure
 
+DATA-STRUCTURE-AND-ALGORITHM/
+├── LinerSearch.java
+├── .gitignore
+└── README.md
 
 ---
 
