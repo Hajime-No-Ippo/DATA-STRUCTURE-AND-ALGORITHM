@@ -15,7 +15,7 @@ public class Task3
         {
             for (int j = 0; j < arr[i].length; j++)
             {
-                System.out.println("Enter Element at row " + i + ", column " + j);
+                System.out.println("Enter Element at row " + (i+1) + ", column " + (j+1));
                 arr[i][j] = scan.nextInt();
             }
         }
@@ -26,12 +26,12 @@ public class Task3
         {
             for (int j = 0; j < arr[i].length; j++)
             {
-                System.out.println(arr[i][j] + " ");
+                System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
 
-        if(isMagic)
+        if(isMagic(arr))
         {
             System.out.println("The square is a magic square!");
         }
