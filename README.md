@@ -1,5 +1,5 @@
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/erictao)
-<h1>Thanks for watching my sharing!</h1>
+<p>Thanks for watching my sharing! :D</p>
 
 ---
 
