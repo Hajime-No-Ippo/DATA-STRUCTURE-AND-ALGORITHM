@@ -17,9 +17,15 @@ public class list {
     }
     //remove something from array list
 
-    cars.remove(2);//remove by index
-    cars.remove("BMW");//remove by name
-    for(String n : cars)//String == String array
+    //remove() Function
+    cars.remove(2);
+    //remove by index
+
+    cars.remove("BMW");
+    //remove by name
+
+    for(String n : cars)
+    //String == String array
     {
         System.out.println(n);//for out print 'n', it is printing one by one(in 'n' times), for out print 'cars(name of the arraylist)' it prints whole list 'n' times.
     }
