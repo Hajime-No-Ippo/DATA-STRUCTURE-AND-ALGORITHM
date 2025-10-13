@@ -1,7 +1,10 @@
     import java.util.*;
     public class IBM_OA
     {
-/*SAMPLE       public static void fizzBuzz(int n) {
+/*SAMPLE 
+--- CODE PLAYGROUND ---
+      
+public static void fizzBuzz(int n) {
         // Write your code here
         if(n % 3 == 0 && n % 5 == 0)
             {
@@ -78,7 +81,10 @@
 }
 
 
-/*public class EmailRegistry
+/*
+--- CODE PLAYGROUND ---
+
+public class EmailRegistry
 {
     public static void main(String[] args)
     {
