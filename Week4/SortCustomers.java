@@ -22,15 +22,19 @@ public class SortCustomers {
             new Customer("Alice", "Brown", 25),
             new Customer("Bob", "Adams", 28),
             new Customer("Diana", "Clark", 35),
-            new Customer("Eve", "Davis", 22),
-            new Customer("Adam", "Smith", 25)
+            new Customer("Diana", "Davis", 22),
+            new Customer("Adam", "Smith", 51),
+            new Customer("Mary", "Walsh", 18),
+            new Customer("Adam", "Reed", 32),
+            new Customer("Carl", "English", 29),
+            new Customer("Bob", "Gates", 20) 
         };
 
         System.out.println("Original list of customers:");
         printCustomers(customers);
 
         // Sort by surname
-        bubbleSortBySurname(customers);
+        selectionSortBySurname(customers);
         System.out.println("\nSorted by surname:");
         printCustomers(customers);
 
@@ -54,10 +58,34 @@ public class SortCustomers {
                     Customer temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                    
                 }
             }
         }
     }
+        
+        public static void selectionSortBySurname(Customer[] arr)
+        {
+            int n = arr.length;
+            for (int i = 0; i < n; i++)
+            {
+                int minIndex = i;
+                for(int j = i + 1; j < n; j++)
+                {
+                    if(arr[minIndex].surname.compareToIgnoreCase(arr[j].surname) > 0)
+                    {
+                        minIndex = j;
+                    }
+                }
+                if(minIndex != i)
+                {
+                    Customer tmp = arr[i];
+                    arr[i] = arr[minIndex];
+                    arr[minIndex] = tmp;
+                }
+            }
+
+        }
 
     // Bubble Sort by age (ascending)
     public static void bubbleSortByAge(Customer[] arr) {
