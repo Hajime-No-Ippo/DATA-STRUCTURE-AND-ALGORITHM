@@ -1,0 +1,25 @@
+
+     private static int partition(int[] arr, int left, int right) {
+        int pivot = arr[right]; // choose last element as pivot
+        int left_index = left - 1;
+        int right_index = right;
+        while (true) {
+            // Move left_index right until arr[left_index] >= pivot
+            do { left_index++; } while (arr[left_index] < pivot);
+            // Move right_index left until arr[right_index] <= pivot
+            do { right_index--; } while (right_index >= left && arr[right_index] > pivot);
+
+            if (left_index >= right_index) {
+                // Place pivot in final position
+                int temp = arr[left_index];
+                arr[left_index] = pivot;
+                arr[right] = temp;
+                return left_index;
+            }
+            // Swap arr[left_index] and arr[right_index]
+            int temp = arr[left_index];
+            arr[left_index] = arr[right_index];
+            arr[right_index] = temp;
+        }}
+
+
