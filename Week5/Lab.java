@@ -16,6 +16,7 @@ public class Lab{
     public static void main(String args[]){
         System.out.println(sumNumbers(10)); //  Task1
         System.out.println(reverseString("HelloWorld")); //  Task2
+        System.out.println(isPalindrome("navan"));// Task3
     }
 
     public static int sumNumbers(int n){
@@ -31,19 +32,29 @@ public class Lab{
         }
     }
 
-    public static String reverseString(String arr){
-        int n = arr.length() - 1;
-        String reverseStr = "";
-        while(true){   
-                reverseStr += arr.charAt(n);
-                n--;
-                String sub = arr.substring(0,n);
-            if(n>1){
-                reverseString(sub);
-            }else{
-                return reverseStr + sub;
-            }
-        }
-        
+    public static String reverseString(String s) {
+    if (s == null || s.length() <= 1) {
+        return s;
     }
+    return reverseString(s.substring(1)) + s.charAt(0);
+}
+
+public static boolean isPalindrome(String s) {
+    if (s == null) {
+        return false;  // or true based on how you treat null
+    }
+    return isPalindromeHelper(s, 0, s.length() - 1);
+}
+
+private static boolean isPalindromeHelper(String s, int left, int right) {
+    if (left >= right) {
+        return true;
+    }
+    if (s.charAt(left) != s.charAt(right)) {
+        return false;
+    }
+    return isPalindromeHelper(s, left + 1, right - 1);
+}
+
+
 }
