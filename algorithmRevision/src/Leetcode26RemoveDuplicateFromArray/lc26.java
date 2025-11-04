@@ -11,7 +11,7 @@ public class lc26 {
     }
 
     //Create new Index to modify the original Array, the length would be same,  but the index would record the new number of elements.
-    //we call it overwrite
+    //We call it overwrite
     public static int removeDuplicates(int[] nums) {
         int k = 1;
         for(int i = 1 ; i < nums.length; i++){
