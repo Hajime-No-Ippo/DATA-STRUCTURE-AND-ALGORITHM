@@ -4,8 +4,10 @@ public class DiceMonteCarloCI {
     public static void main(String[] args) {
         Random rand = new Random();
         int trials = 1_000_000;
-        int targetSum = 25;
+        int targetSum =7;
         int count = 0;
+
+
 
         for (int i = 0; i < trials; i++) {
             int sum = 0;
@@ -16,6 +18,7 @@ public class DiceMonteCarloCI {
                 count++;
             }
         }
+
 
         double probability = (double) count / trials;
         double se = Math.sqrt(probability * (1 - probability) / trials);
