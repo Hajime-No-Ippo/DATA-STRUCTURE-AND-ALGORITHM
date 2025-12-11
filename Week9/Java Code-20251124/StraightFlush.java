@@ -42,6 +42,7 @@ public class StraightFlush {
 
         double p = (double)count/trials;
         double z =1.96;
+        //Standard Error
         double se = Math.sqrt(p * (1-p)/trials);
         double lower = p - z * se;
         double higher = p + z * se;
